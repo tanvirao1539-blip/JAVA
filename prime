@@ -1,0 +1,38 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("Provide input number :");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        sc.close();
+        
+        if(num <= 1){
+            System.out.println("Input number is not prime");
+        }
+        if(num == 2 || num == 2){
+            System.out.println("Input number is prime");
+        }
+        
+        
+        boolean isprime = true;
+        
+        int c =2;
+        while(c*c < num)
+        {
+            if(num % c == 0){
+                isprime = false;
+                break;
+            }
+            c++;
+        }
+        if(isprime){
+        System.out.println("Input number is prime");
+        }else{
+        System.out.println("Input number is not prime");
+        }
+}
+}
