@@ -1,0 +1,31 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args) {
+        
+        List<String> TopFruits = new ArrayList<>();
+        System.out.println("Is TopFruits is Empty :"+TopFruits.isEmpty());
+        
+        TopFruits.add("Banana");
+        TopFruits.add("Apple");
+        TopFruits.add("Papaya");
+        TopFruits.add("Pineaple");
+    
+        System.out.println("TopFruits in the world :"+TopFruits.get(0));
+        
+        System.out.println("TopFruits size :"+TopFruits.size());
+        
+        System.out.println("TopFruits remove pineapple :"+TopFruits.remove(3));
+        
+        System.out.println("TopFruits size :"+TopFruits.size());
+        
+        TopFruits.set(2, "Orange");
+        System.out.println("Replace PApaya with :"+TopFruits.get(2));
+        
+        System.out.println(TopFruits);
+}
+}
