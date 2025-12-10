@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args) {
+        
+        List<String> s = new ArrayList<>();
+        
+        // s.add("element1");
+        // s.add("element2");
+        // s.add("element3");
+        // s.add("element4");
+        
+        //duplicate elemnts
+        
+        s.add("element1");
+        s.add("element2");
+        s.add("element2");
+        s.add(null);
+        
+        System.out.println(s);
+        
+      
+}
+}
