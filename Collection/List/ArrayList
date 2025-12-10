@@ -22,7 +22,31 @@ class Main {
         s.add(null);
         
         System.out.println(s);
+
+        //with collection as a parameter, ideally ArrayList defined w/o the size take 10 as size
+
+ List<Integer> i = new ArrayList<>();
         
+        i.add(5);
+        i.add(7);
+        i.add(8);
+        i.add(9);
+        i.add(10);
+        
+        // System.out.println(i);
+        
+         List<Integer> iii = new ArrayList<>(i);
+        
+        List<Integer> ii = new ArrayList<>();
+        
+        ii.add(1);
+        ii.add(2);
+        ii.add(3);
+        ii.add(5);
+        ii.add(4);
+        
+        iii.addAll(ii);
+        System.out.println(iii);
       
 }
 }
