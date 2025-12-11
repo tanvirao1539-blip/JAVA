@@ -17,6 +17,12 @@ class Main {
         TopFruits.add("Apple");
         TopFruits.add("Papaya");
         TopFruits.add("Pineaple");
+        
+        Iterator<String> i = TopFruits.iterator();
+        while(i.hasNext()){
+           String fruits = (String) i.next();
+           System.out.println("TopFruits with Iterator :"+fruits);
+       }
     
        ListIterator<String> iterate = TopFruits.listIterator();
        while(iterate.hasNext()){
@@ -28,7 +34,7 @@ class Main {
            System.out.println("TopFruits previous :"+fruits);
        }
        
-       TopFruits.stream().forEach( TopFruits -> System.out.println("TopFruits :"+TopFruits)); 
+       TopFruits.stream().forEach( fruits -> System.out.println("TopFruits :"+fruits)); 
        
        
 }
