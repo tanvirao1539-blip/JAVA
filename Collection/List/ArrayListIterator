@@ -1,0 +1,35 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+import java.util.List;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.ArrayList;
+// import java.util.Stream;
+
+class Main {
+    public static void main(String[] args) {
+        
+        List<String> TopFruits = new ArrayList<>();
+        System.out.println("Is TopFruits is Empty :"+TopFruits.isEmpty());
+        
+        TopFruits.add("Banana");
+        TopFruits.add("Apple");
+        TopFruits.add("Papaya");
+        TopFruits.add("Pineaple");
+    
+       ListIterator<String> iterate = TopFruits.listIterator();
+       while(iterate.hasNext()){
+           String fruits = (String) iterate.next();
+           System.out.println("TopFruits next :"+fruits);
+       }
+       while(iterate.hasPrevious()){
+           String fruits = (String) iterate.previous();
+           System.out.println("TopFruits previous :"+fruits);
+       }
+       
+       TopFruits.stream().forEach( TopFruits -> System.out.println("TopFruits :"+TopFruits)); 
+       
+       
+}
+}
